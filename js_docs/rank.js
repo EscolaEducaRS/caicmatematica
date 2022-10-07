@@ -44,12 +44,14 @@ const NG1_1 = document.getElementById('NotaG1_1').innerText = '0.75';
 const NG2_1 = document.getElementById('NotaG2_1').innerText = '1';
 const NG3_1 = document.getElementById('NotaG3_1').innerText = '1';
 const NG4_1 = document.getElementById('NotaG4_1').innerText = '0.5';
+document.getElementById("NotaG4_1").style.color = "yellow";
 const NG5_1 = document.getElementById('NotaG5_1').innerText = '0.75';
 const NG6_1 = document.getElementById('NotaG6_1').innerText = '';
 const NG7_1 = document.getElementById('NotaG7_1').innerText = '';
 const NG8_1 = document.getElementById('NotaG8_1').innerText = '';
 const NG9_1 = document.getElementById('NotaG9_1').innerText = '';
 const NG10_1 = document.getElementById('NotaG10_1').innerText = '';
+
 
 
 
