@@ -214,11 +214,14 @@ let grupo10 = {
 //
         if (grupo10.notas.length>1){
             notasM = notasM / (grupo10.notas.length - 1)
+        } else {
+            return 0
         }
         return Math.round(notasM * 100) / 100
     }
 }
 
+//nomes da notas 1 a 5
 const NGrupo1 = document.getElementById('nGrupo1').innerText = grupo1.nome;
 const NGrupo2 = document.getElementById('nGrupo2').innerText = grupo2.nome;
 const NGrupo3 = document.getElementById('nGrupo3').innerText = grupo3.nome;
@@ -229,6 +232,7 @@ const NGrupo7 = document.getElementById('nGrupo7').innerText = grupo7.nome;
 const NGrupo8 = document.getElementById('nGrupo8').innerText = grupo8.nome;
 const NGrupo9 = document.getElementById('nGrupo9').innerText = grupo9.nome;
 const NGrupo10 = document.getElementById('nGrupo10').innerText = grupo10.nome;
+//nomes da notas 6 a 10
 const NGrupo11 = document.getElementById('nGrupo11').innerText = grupo1.nome;
 const NGrupo20 = document.getElementById('nGrupo20').innerText = grupo2.nome;
 const NGrupo30 = document.getElementById('nGrupo30').innerText = grupo3.nome;
@@ -239,16 +243,7 @@ const NGrupo70 = document.getElementById('nGrupo70').innerText = grupo7.nome;
 const NGrupo80 = document.getElementById('nGrupo80').innerText = grupo8.nome;
 const NGrupo90 = document.getElementById('nGrupo90').innerText = grupo9.nome;
 const NGrupo100 = document.getElementById('nGrupo100').innerText = grupo10.nome;
-const NGrupo12 = document.getElementById('nGrupo12').innerText = grupo1.nome;
-const NGrupo21 = document.getElementById('nGrupo21').innerText = grupo2.nome;
-const NGrupo31 = document.getElementById('nGrupo31').innerText = grupo3.nome;
-const NGrupo41 = document.getElementById('nGrupo41').innerText = grupo4.nome;
-const NGrupo51 = document.getElementById('nGrupo51').innerText = grupo5.nome;
-const NGrupo61 = document.getElementById('nGrupo61').innerText = grupo6.nome;
-const NGrupo71 = document.getElementById('nGrupo71').innerText = grupo7.nome;
-const NGrupo81 = document.getElementById('nGrupo81').innerText = grupo8.nome;
-const NGrupo91 = document.getElementById('nGrupo91').innerText = grupo9.nome;
-const NGrupo101 = document.getElementById('nGrupo101').innerText = grupo10.nome;
+
 
 document.getElementById('NotaG1_1').innerText = grupo1.notas[1];
 document.getElementById('NotaG2_1').innerText = grupo2.notas[1];
@@ -274,20 +269,54 @@ document.getElementById('NotaG10_1').innerText = grupo10.notas[1];
 
 
 
+let rankV1 = 
+    [
+    {nome: grupo1.nome, valor: grupo1.mediaProv()},
+    {nome: grupo2.nome, valor: grupo2.mediaProv()},
+    {nome: grupo3.nome, valor: grupo3.mediaProv()},
+    {nome: grupo4.nome, valor: grupo4.mediaProv()},
+    {nome: grupo5.nome, valor: grupo5.mediaProv()},
+    {nome: grupo6.nome, valor: grupo6.mediaProv()},
+    {nome: grupo7.nome, valor: grupo7.mediaProv()},
+    {nome: grupo8.nome, valor: grupo8.mediaProv()},
+    {nome: grupo9.nome, valor: grupo9.mediaProv()},
+    {nome: grupo10.nome, valor: grupo10.mediaProv()}
+    ];
 
+    rankV1.sort(function (a, b) {
+    if (a.valor < b.valor) {
+      return 1;
+    }
+    if (a.valor > b.valor) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+  
+let rankOrdem = rankV1
 
+//nomes dos grupos do rank
+const NGrupo12 = document.getElementById('nGrupo12').innerText = rankOrdem[0].nome;
+const NGrupo21 = document.getElementById('nGrupo21').innerText = rankOrdem[1].nome;
+const NGrupo31 = document.getElementById('nGrupo31').innerText = rankOrdem[2].nome;
+const NGrupo41 = document.getElementById('nGrupo41').innerText = rankOrdem[3].nome;
+const NGrupo51 = document.getElementById('nGrupo51').innerText = rankOrdem[4].nome;
+const NGrupo61 = document.getElementById('nGrupo61').innerText = rankOrdem[5].nome;
+const NGrupo71 = document.getElementById('nGrupo71').innerText = rankOrdem[6].nome;
+const NGrupo81 = document.getElementById('nGrupo81').innerText = rankOrdem[7].nome;
+const NGrupo91 = document.getElementById('nGrupo91').innerText = rankOrdem[8].nome;
+const NGrupo101 = document.getElementById('nGrupo101').innerText = rankOrdem[9].nome;
 
-
-
-// Rank Temporário
-document.getElementById("NotaG101_1").innerText = grupo1.mediaProv()
-document.getElementById("NotaG102_1").innerText = grupo2.mediaProv()
-document.getElementById("NotaG103_1").innerText = grupo3.mediaProv()
-document.getElementById("NotaG104_1").innerText = grupo4.mediaProv()
-document.getElementById("NotaG105_1").innerText = grupo5.mediaProv()
-document.getElementById("NotaG106_1").innerText = grupo6.mediaProv()
-document.getElementById("NotaG107_1").innerText = grupo7.mediaProv()
-document.getElementById("NotaG108_1").innerText = grupo8.mediaProv()
-document.getElementById("NotaG109_1").innerText = grupo9.mediaProv()
-document.getElementById("NotaG110_1").innerText = grupo10.mediaProv()
+//média dos grupos do rank
+document.getElementById("NotaG101_1").innerText = rankOrdem[0].valor;
+document.getElementById("NotaG102_1").innerText = rankOrdem[1].valor;
+document.getElementById("NotaG103_1").innerText = rankOrdem[2].valor;
+document.getElementById("NotaG104_1").innerText = rankOrdem[3].valor;
+document.getElementById("NotaG105_1").innerText = rankOrdem[4].valor;
+document.getElementById("NotaG106_1").innerText = rankOrdem[5].valor;
+document.getElementById("NotaG107_1").innerText = rankOrdem[6].valor;
+document.getElementById("NotaG108_1").innerText = rankOrdem[7].valor;
+document.getElementById("NotaG109_1").innerText = rankOrdem[8].valor;
+document.getElementById("NotaG110_1").innerText = rankOrdem[9].valor;
 
