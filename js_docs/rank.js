@@ -109,8 +109,8 @@ let grupo5 = {
     }
 }
 let grupo6 = {
-    nome: "Mathematics",
-    notas: [0],
+    nome: "Bolacha com Leite",
+    notas: [0,0.75],
     mediaProv: function () {
         let notasM = 0
         if (grupo6.notas[1]>0) {notasM = grupo6.notas[1] }
@@ -132,7 +132,7 @@ let grupo6 = {
 }
 let grupo7 = {
     nome: "Ciclone",
-    notas: [0],
+    notas: [0,0.75],
     mediaProv: function () {
         let notasM = 0
         if (grupo7.notas[1]>0) {notasM = grupo7.notas[1] }
@@ -154,7 +154,7 @@ let grupo7 = {
 }
 let grupo8 = {
     nome: "Cocotas",
-    notas: [0],
+    notas: [0,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo8.notas[1]>0) {notasM = grupo8.notas[1] }
@@ -175,8 +175,8 @@ let grupo8 = {
     }
 }
 let grupo9 = {
-    nome: "Sem Cadastro!",
-    notas: [0],
+    nome: "Churrasco",
+    notas: [0,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo9.notas[1]>0) {notasM = grupo9.notas[1] }
@@ -197,8 +197,8 @@ let grupo9 = {
     }
 }
 let grupo10 = {
-    nome: "Sem Cadastro!",
-    notas: [0],
+    nome: "PUMA",
+    notas: [0,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo10.notas[1]>0) {notasM = grupo10.notas[1] }
