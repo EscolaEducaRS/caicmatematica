@@ -1,6 +1,6 @@
 let grupo1 = {
     nome: "JYLEGH",
-    notas: [0, 0.75,1,0.94],
+    notas: [0, 0.75,1,0.94,0.39,0.39,0.39],
     mediaProv: function () {
         let notasM = 0
         if (grupo1.notas[1]>0) {notasM = grupo1.notas[1] }
@@ -44,7 +44,7 @@ let grupo2 = {
 }
 let grupo3 = {
     nome: "Irmandade",
-    notas: [0,1,0.97,0.94],
+    notas: [0,1,0.77,0.94,0.67,0.67,0.67],
     mediaProv: function () {
         let notasM = 0
         if (grupo3.notas[1]>0) {notasM = grupo3.notas[1] }
@@ -66,7 +66,7 @@ let grupo3 = {
 }
 let grupo4 = {
     nome: "Os Intocáveis",
-    notas: [0, 0.5,0.68,0.8],
+    notas: [0, 0.5,0.68,0.8,0,0,0],
     mediaProv: function () {
         let notasM = 0
         if (grupo4.notas[1]>0) {notasM = grupo4.notas[1] }
@@ -88,7 +88,7 @@ let grupo4 = {
 }
 let grupo5 = {
     nome: "Os Elevados",
-    notas: [0, 0.75,0.78,0.94],
+    notas: [0, 0.75,0.78,0.94,0.6,0.6,0.6],
     mediaProv: function () {
         let notasM = 0
         if (grupo5.notas[1]>0) {notasM = grupo5.notas[1] }
@@ -176,7 +176,7 @@ let grupo8 = {
 }
 let grupo9 = {
     nome: "Churrasco",
-    notas: [0,1,0,0,0.84,0.84,0.84],
+    notas: [0,1,1,0.87,0.84,0.84,0.84],
     mediaProv: function () {
         let notasM = 0
         if (grupo9.notas[1]>0) {notasM = grupo9.notas[1] }

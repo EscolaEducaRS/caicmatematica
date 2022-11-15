@@ -94,3 +94,29 @@ table{
 th, td{
     border: 1px solid #3498db;
 }
+
+.primeiroLugar{
+	font-size: 1.6em;
+	color: blue;
+	background-color: darkgreen;
+}
+.segundoLugar{
+	font-size: 1.2em;
+	color: rgb(71, 71, 255);
+	background-color: rgb(115, 185, 115);
+}
+.terceiroLugar{
+	font-size: 1.1em;
+	color: rgb(115, 115, 255);
+	background-color: rgb(162, 224, 162);
+}
+.medianoLugar{
+	font-size: 1.1em;
+	color: rgb(255, 250, 174);
+	background-color: rgba(52, 248, 157, 0.384);
+}
+.pioresLugar{
+	font-size: 1.1em;
+	color: rgb(255, 75, 75);
+	background-color: rgb(36, 36, 36);
+}
