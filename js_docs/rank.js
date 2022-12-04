@@ -1,6 +1,6 @@
 let grupo1 = {
     nome: "JYLEGH",
-    notas: [0, 0.75,1,0.94,0.39,0.39,0.39,0.45,0.45],
+    notas: [0, 0.75,1,0.94,0.39,0.39,0.39,0.45,0.45,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo1.notas[1]>0) {notasM = grupo1.notas[1] }
@@ -22,7 +22,7 @@ let grupo1 = {
 }
 let grupo2 = {
     nome: "Chico Rafael",
-    notas: [0, 1,0.9,0.8,0.77,0.77,0.77,0.5,0.5],
+    notas: [0, 1,0.9,0.8,0.77,0.77,0.77,0.5,0.5,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo2.notas[1]>0) {notasM = grupo2.notas[1] }
@@ -44,7 +44,7 @@ let grupo2 = {
 }
 let grupo3 = {
     nome: "Irmandade",
-    notas: [0,1,0.77,0.94,0.67,0.67,0.67,0.55,0.55],
+    notas: [0,1,0.77,0.94,0.67,0.67,0.67,0.55,0.55,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo3.notas[1]>0) {notasM = grupo3.notas[1] }
@@ -66,7 +66,7 @@ let grupo3 = {
 }
 let grupo4 = {
     nome: "Os Intocáveis",
-    notas: [0, 0.5,0.68,0.8,0,0,0,0.7,0.7],
+    notas: [0, 0.5,0.68,0.8,0,0,0,0.7,0.7,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo4.notas[1]>0) {notasM = grupo4.notas[1] }
@@ -88,7 +88,7 @@ let grupo4 = {
 }
 let grupo5 = {
     nome: "Os Elevados",
-    notas: [0, 0.75,0.78,0.94,0.6,0.6,0.6,0.7,0.7],
+    notas: [0, 0.75,0.78,0.94,0.6,0.6,0.6,0.7,0.7,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo5.notas[1]>0) {notasM = grupo5.notas[1] }
@@ -110,7 +110,7 @@ let grupo5 = {
 }
 let grupo6 = {
     nome: "Bolacha com Leite",
-    notas: [0,0.75,0.65,0.57,0.37,0.37,0.37,0.8,0.8],
+    notas: [0,0.75,0.65,0.57,0.37,0.37,0.37,0.8,0.8,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo6.notas[1]>0) {notasM = grupo6.notas[1] }
@@ -132,7 +132,7 @@ let grupo6 = {
 }
 let grupo7 = {
     nome: "Ciclone",
-    notas: [0,0.75,0.6,0.67,0.49,0.49,0.49,0.7,0.7],
+    notas: [0,0.75,0.6,0.67,0.49,0.49,0.49,0.7,0.7,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo7.notas[1]>0) {notasM = grupo7.notas[1] }
@@ -154,7 +154,7 @@ let grupo7 = {
 }
 let grupo8 = {
     nome: "Cocotas",
-    notas: [0,0.75,0.65,0.74,0.48,0.48,0.48,0.66,0.66],
+    notas: [0,0.75,0.65,0.74,0.48,0.48,0.48,0.66,0.66,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo8.notas[1]>0) {notasM = grupo8.notas[1] }
@@ -176,7 +176,7 @@ let grupo8 = {
 }
 let grupo9 = {
     nome: "Churrasco",
-    notas: [0,1,1,0.87,0.84,0.84,0.84,0.84,0.84],
+    notas: [0,1,1,0.87,0.84,0.84,0.84,0.84,0.84,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo9.notas[1]>0) {notasM = grupo9.notas[1] }
@@ -198,7 +198,7 @@ let grupo9 = {
 }
 let grupo10 = {
     nome: "PUMA",
-    notas: [0,1,0.5,0.6,0.4,0.4,0.4,0.6,0.6],
+    notas: [0,1,0.5,0.6,0.4,0.4,0.4,0.6,0.6,1,1],
     mediaProv: function () {
         let notasM = 0
         if (grupo10.notas[1]>0) {notasM = grupo10.notas[1] }
@@ -405,4 +405,19 @@ document.getElementById("NotaG107_1").innerText = rankOrdem[6].valor;
 document.getElementById("NotaG108_1").innerText = rankOrdem[7].valor;
 document.getElementById("NotaG109_1").innerText = rankOrdem[8].valor;
 document.getElementById("NotaG110_1").innerText = rankOrdem[9].valor;
+
+document.getElementById("NotaG101_2").innerText = round(rankOrdem[0].valor*100);
+document.getElementById("NotaG102_2").innerText = round(rankOrdem[1].valor*100);
+document.getElementById("NotaG103_2").innerText = round(rankOrdem[2].valor*100);
+document.getElementById("NotaG104_2").innerText = round(rankOrdem[3].valor*100);
+document.getElementById("NotaG105_2").innerText = round(rankOrdem[4].valor*100);
+document.getElementById("NotaG106_2").innerText = round(rankOrdem[5].valor*100);
+document.getElementById("NotaG107_2").innerText = round(rankOrdem[6].valor*100);
+document.getElementById("NotaG108_2").innerText = round(rankOrdem[7].valor*100);
+document.getElementById("NotaG109_2").innerText = round(rankOrdem[8].valor*100);
+document.getElementById("NotaG110_2").innerText = round(rankOrdem[9].valor*100);
+
+function round(x) {
+    return Math.ceil(x / 5) * 5;
+}
 
