@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Exercícios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Parte 1: Configurações -->
+    <section id="config">
+      <h2>Configurações</h2>
+      <form id="configForm">
+        <label for="nivel">Nível de dificuldade:</label>
+        <select id="nivel" name="nivel">
+          <option value="facil">Fácil</option>
+          <option value="medio">Médio</option>
+          <option value="dificil">Difícil</option>
+        </select>
+
+        <label for="materia">Matéria:</label>
+        <select id="materia" name="materia">
+          <option value="aritmetica">Aritmética</option>
+          <option value="algebra">Álgebra</option>
+          <option value="geometria">Geometria</option>
+          <option value="funcoes">Funções</option>
+        </select>
+
+        <label for="quantidade">Quantidade de exercícios:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="50" value="5">
+
+        <button type="submit">Gerar Exercícios</button>
+      </form>
+    </section>
+
+    <!-- Parte 2: Exercícios -->
+    <section id="exercicios">
+      <h2>Exercícios</h2>
+      <div id="listaExercicios"></div>
+    </section>
+  </main>
+
+  <script src="js_docs/exercicio.js"></script>
+</body>
+</html>
